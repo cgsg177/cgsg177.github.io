@@ -90,7 +90,7 @@ function initGL() {
 
       z = CmplSet(x0 + gl_FragCoord.x * (x1 - x0) / 500.0, y0 + gl_FragCoord.y * (y1 - y0) / 500.0);
       
-      n = Julia(z, CmplSet(0.30 + sin(time), 0.35 + sin(time)));
+      n = Julia(z, CmplSet(0.4 + 0.2 * sin(time + 3.5), 0.35 + 0.1 * sin(time * 2.1)));
 
       o_color = vec4(n * 8.0 / 255.0, n / (8.0 * 255.0) * 3.0, n / 255.0 * 5.0, 1);
 
