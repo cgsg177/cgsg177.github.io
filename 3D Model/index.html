@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>3D Model</title>
+    </head>
+    <body>
+        <h1> 3D Cow </h1>
+        <canvas id="glCanvas" width="1000px" height="1000px" style="border: 2px Solid rgb(51, 153, 85)"></canvas>
+        <script type="module">
+            import { initGL } from "./render.js";
+            window.addEventListener("load", () => {
+                initGL();
+            });
+        </script> 
+    </body>
+</html>
